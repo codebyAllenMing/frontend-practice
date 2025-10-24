@@ -5,7 +5,7 @@
 ## 📚 練習主題
 | 日期 | 類別 | 主題 | 說明 | 出處 |
 |------|------|------|------|------|
-| 2025-10-24 | HTML+CSS | Basic Layout | 練習 CSS Inverted border-radius Card | Curve Outside | https://www.youtube.com/watch?v=rb9i5xBV4js |
+| 2025-10-24 | HTML+CSS | Basic Layout | 練習 CSS Inverted border-radius Card | https://www.youtube.com/watch?v=rb9i5xBV4js |
 
 ---
 
