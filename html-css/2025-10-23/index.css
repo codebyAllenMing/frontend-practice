@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d2b3a;
+    overflow: hidden;
+    filter: url(#gooey);
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(
+        90deg,
+        #543bdc 10%,
+        #5e47de 20%,
+        #634ddf 30%,
+        #6752e0 40%,
+        #6f5be2 50%,
+        #7663e3 60%,
+        #7e6ce5 70%,
+        #8574e7 80%,
+        #9485ea 90%,
+        #9e90ec 100%
+    );
+    border-radius: 50%;
+}
+
+.particles {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(
+        90deg,
+        #543bdc 10%,
+        #5e47de 20%,
+        #634ddf 30%,
+        #6752e0 40%,
+        #6f5be2 50%,
+        #7663e3 60%,
+        #7e6ce5 70%,
+        #8574e7 80%,
+        #9485ea 90%,
+        #9e90ec 100%
+    );
+    pointer-events: none;
+    /* animation: animate 2s ease infinite; */
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(var(--X), var(--Y));
+    }
+}
+
+svg {
+    width: 0;
+    height: 0;
+}

@@ -3,11 +3,12 @@
 持續累積的前端練習集合，涵蓋 HTML、CSS、JavaScript、React 等主題。
 
 ## 📚 練習主題
-| 日期 | 類別 | 主題 | 說明 | 出處 |
-|------|------|------|------|------|
-| 2025-10-24 | HTML+CSS | Basic Layout | 練習 CSS Inverted border-radius Card | https://www.youtube.com/watch?v=rb9i5xBV4js |
-| 2025-10-24 | HTML+CSS | Animation Effects | 練習 CSS Facial Recognition Animation Effects | https://www.youtube.com/watch?v=homV6mgQ6FE |
-| 2025-10-26 | HTML+CSS | Animation Effects | 練習 CSS Fingerprint Scanner Animation Effects | https://www.youtube.com/watch?v=6j5pujjRQWo |
+| 檔案 | 類別 | 主題 | 說明 | 更新日期 |
+|------|------|------|------|
+| 2025-10-24 | HTML+CSS | Basic Layout | 練習 CSS Inverted border-radius Card(https://www.youtube.com/watch?v=rb9i5xBV4js) | 2025-10-24 |
+| 2025-10-25 | HTML+CSS | Animation Effects | 練習 CSS Facial Recognition Animation Effects(https://www.youtube.com/watch?v=homV6mgQ6FE) | 2025-10-25 |
+| 2025-10-26 | HTML+CSS | Animation Effects | 練習 CSS Fingerprint Scanner Animation Effects(https://www.youtube.com/watch?v=6j5pujjRQWo) | 2025-10-25 |
+| 2025-10-23 | HTML+CSS | Animation Effects | 練習 CSS Liquid Blast Effects using CSS SVG & Javascript(https://www.youtube.com/watch?v=YlZFyYvrQ-U) | 2025-10-25 |
 
 ---
 
