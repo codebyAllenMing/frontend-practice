@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.scan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: animateColor 2s linear infinite;
+}
+
+@keyframes animateColor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.face {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: url(./shark_1.png);
+    background-size: 500px;
+}
+
+.scan .face::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./shark_2.png);
+    background-size: 500px;
+    animation: animate 4s ease-in-out infinite;
+}
+
+/* line */
+.scan .face::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #3f70ea;
+    animation: animate_line 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px #3f70ea) drop-shadow(0 0 60px #3f70ea);
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+}
+
+@keyframes animate_line {
+    0%,
+    100% {
+        top: 0%;
+    }
+    50% {
+        top: 100%;
+    }
+}
+
+.scan h3 {
+    text-transform: uppercase;
+    color: #3f70ea;
+    font-size: 2em;
+    margin-top: 34px;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 20px #3f70ea) drop-shadow(0 0 60px #3f70ea);
+    animation: animate_text 0.5s steps(1) infinite;
+}
+
+@keyframes animate_text {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.scan .face .dot::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    background: url(./shark_3.png);
+    background-size: 500px;
+    animation: face_line 4s ease-in-out infinite;
+}
+
+@keyframes face_line {
+    0%,25%,100%
+    {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+}
+
+.scan .face .dot::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    background: url(./shark_4.png);
+    background-size: 500px;
+    animation: face_point 4s ease-in-out infinite;
+}
+
+@keyframes face_point {
+    0%,100%
+    {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+}
