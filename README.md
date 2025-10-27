@@ -10,6 +10,7 @@
 | 2025-10-26 | HTML+CSS | Animation Effects | 練習 [CSS Fingerprint Scanner Animation Effects](https://www.youtube.com/watch?v=6j5pujjRQWo) | 2025-10-25 |
 | 2025-10-23 | HTML+CSS | Animation Effects | 練習 [CSS Liquid Blast Effects using CSS SVG & Javascript](https://www.youtube.com/watch?v=YlZFyYvrQ-U) | 2025-10-25 |
 | 2025-10-22 | HTML+CSS | Canvas | 練習 [Create a Mind-Blowing Starfield Animation with JavaScript Canvas & Javascript](https://www.youtube.com/watch?v=TLcte6VrT-E) | 2025-10-26 |
+| 2025-10-27 | HTML+CSS | Abstract Background  | 練習 [How to make Abstract Background Using Html & CSS Only](https://www.youtube.com/watch?v=cuE94CE5K3c) | 2025-10-27 |
 
 ---
 
