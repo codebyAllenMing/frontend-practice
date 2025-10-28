@@ -12,8 +12,8 @@
 | 2025-10-22(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-22) | HTML+CSS | Canvas | 練習 [Create a Mind-Blowing Starfield Animation with JavaScript Canvas & Javascript](https://www.youtube.com/watch?v=TLcte6VrT-E) | 2025-10-26 |
 | 2025-10-27(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-27) | HTML+CSS | Abstract Background  | 練習 [How to make Abstract Background Using Html & CSS Only](https://www.youtube.com/watch?v=cuE94CE5K3c) | 2025-10-27 |
 | 2025-10-21(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-21) | HTML+CSS | CANVAS  | 練習 [Magnetic Field Lines Effect](https://www.youtube.com/watch?v=oXmxfvgKHac) | 2025-10-27 |
-| 2025-10-28(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-21) | HTML+CSS | Simple Radial Menu  | 練習 [Animated Circular Navigation Menu using Html CSS & Vanilla Javascript](https://www.youtube.com/watch?v=oXmxfvgKHac) | 2025-10-27 |
-| 2025-10-20(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-21) | HTML+CSS | Animation Effect + 360 degree  | 練習 [CSS Only Animation Effect + 360 degree Amazon Card Box view on Mousemove](https://www.youtube.com/watch?v=7UJ7J1lM2Bw) | 2025-10-27 |
+| 2025-10-28(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-28) | HTML+CSS | Simple Radial Menu  | 練習 [Animated Circular Navigation Menu using Html CSS & Vanilla Javascript](https://www.youtube.com/watch?v=oXmxfvgKHac) | 2025-10-27 |
+| 2025-10-20(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-20) | HTML+CSS | Animation Effect + 360 degree  | 練習 [CSS Only Animation Effect + 360 degree Amazon Card Box view on Mousemove](https://www.youtube.com/watch?v=7UJ7J1lM2Bw) | 2025-10-27 |
 ---
 
 ## 📦 專案結構
