@@ -15,6 +15,7 @@
 | 2025-10-28(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-28) | HTML+CSS | Simple Radial Menu  | 練習 [Animated Circular Navigation Menu using Html CSS & Vanilla Javascript](https://www.youtube.com/watch?v=oXmxfvgKHac) | 2025-10-27 |
 | 2025-10-20(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-20) | HTML+CSS | Animation Effect + 360 degree  | 練習 [CSS Only Animation Effect + 360 degree Amazon Card Box view on Mousemove](https://www.youtube.com/watch?v=7UJ7J1lM2Bw) | 2025-10-28 |
 | 2025-10-29(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-29) | HTML+CSS | Animation Effects  | 練習 [CSS Animation Effects](https://www.youtube.com/watch?v=tdO_xM8Q9Xo) | 2025-10-30 |
+| 2025-10-30(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-30) | HTML+CSS | Animation Effects  | 練習 [CSS Loading Animation](https://www.youtube.com/watch?v=212Ia7Eumws) | 2025-10-30 |
 
 ---
 
