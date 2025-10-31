@@ -1,0 +1,77 @@
+#!/bin/bash
+# 自動建立今日練習資料夾 + HTML / CSS 模板 + 啟動 Live Server
+if [ -n "$1" ]; then
+	DATE="$1"
+else
+	DATE=$(date +%Y-%m-%d)
+	DIR="html-css/$DATE"
+
+	# 🔄 檢查是否已存在，若存在則往後推一天
+	while [ -d "$DIR" ]; do
+		if date -v+1d +"%Y-%m-%d" >/dev/null 2>&1; then
+			# macOS
+			DATE=$(date -v+1d -jf "%Y-%m-%d" "$DATE" +"%Y-%m-%d")
+		else
+			# Linux
+			DATE=$(date -d "$DATE +1 day" +"%Y-%m-%d")
+		fi
+		DIR="html-css/$DATE"
+	done
+fi
+
+DIR="html-css/$DATE"
+
+# HTML 模板函式
+create_html() {
+	cat <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+EOF
+}
+
+# CSS 模板函式
+create_css() {
+	cat <<'EOF'
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 17px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #001219;
+    font-family: 'Source Code Pro', monospace;
+}
+EOF
+}
+
+if [ ! -d "$DIR" ]; then
+	mkdir -p "$DIR"
+	create_html >"$DIR/index.html"
+	create_css >"$DIR/index.css"
+	echo "✅ 已建立練習資料夾：$DIR"
+else
+	echo "📁 $DIR 已存在，直接啟動 Live Server"
+fi
+
+./serve "$DATE"

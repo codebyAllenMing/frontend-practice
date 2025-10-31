@@ -1,0 +1,10 @@
+#!/bin/bash
+# 用法: ./serve 2025-10-16
+DIR="html-css/$1"
+
+if [ -d "$DIR" ]; then
+  echo "🚀 開啟 Live Server: $DIR"
+  npx live-server "$DIR" --open=index.html
+else
+  echo "❌ 找不到目錄: $DIR"
+fi
