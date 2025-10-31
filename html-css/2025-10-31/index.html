@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>Scroll To Text Reveal Effect using CSS</title>
+    </head>
+    <body>
+        <div class="box">
+            <h2>Scroll Down to Reveal Text</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                dolores totam magni fugit inventore eius. Magnam itaque
+                dignissimos minima laborum quod, est sint commodi accusamus vel
+                quo libero. Aliquam, ducimus.lo Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Optio aliquid voluptatem atque
+                provident. Eligendi veniam culpa ipsa sint saepe dolorem
+                corrupti ipsum excepturi! Sint molestias illum aut nisi corporis
+                eos. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quam ipsum, repellat aperiam quidem iure laborum, tempora
+                expedita at culpa et, ab unde quibusdam deserunt repudiandae
+                placeat atque sequi possimus qui? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Laborum vitae ducimus autem
+                aperiam? Ullam rem non, veritatis illo sunt tempora ut fuga?
+                Illo placeat cumque exercitationem quae in porro quasi.
+            </p>
+        </div>
+        <script>
+            let textElement = document.querySelector(".text");
+            let textContent = textElement.textContent;
+            textElement.innerHTML = "";
+
+            for (let char of textContent) {
+                let span = document.createElement("span");
+                span.textContent = char;
+                textElement.appendChild(span);
+            }
+
+            let spans = document.querySelectorAll("span");
+            window.addEventListener("scroll", () => {
+                let scrollDistance = window.scrollY;
+                spans.forEach((span, index) => {
+                    if (scrollDistance >= (index + 1) * 10) {
+                        span.classList.add("active");
+                    } else {
+                        span.classList.remove("active");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

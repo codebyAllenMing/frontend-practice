@@ -1,0 +1,64 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 17px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1230vh;
+    /* background: #001219; */
+    /* font-family: "Source Code Pro"; */
+    background: #333;
+}
+
+.box {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;
+}
+
+.box h2 {
+    color: #00ff89;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.box .text {
+    color: #fff;
+    max-width: 750px;
+}
+
+.box .text span {
+    position: relative;
+    font-size: 1.25em;
+    color: transparent;
+    background: #00ff89;
+    transition: 0.25s;
+    letter-spacing: 0.1em;
+}
+
+.box .text span::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: #333;
+}
+
+.box .text span.active {
+    color: #fff;
+    background: transparent;
+}
+
+.box .text span.active::before {
+    opacity: 0;
+}
