@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>How To Create Text Typing Effect</title>
+        <script type="module">
+            const typingSpeed = 150;
+            const delay = 2000;
+            const textArray = [
+                "Fantastic 🗽⭐🌚",
+                "Hello Worlds!",
+                "Welcome to my world 👀",
+                "I'm Allen Ming 😎",
+                "This is the typing Animate",
+                "Live A Life You Will Remember <span class='avicii'></span>",
+                "Go Coding 🧑‍💻",
+            ];
+            let typingIndex = 0;
+            let charIndex = 0;
+            const typedTextDom = document.querySelector(".typed-text");
+
+            const typingText = () => {
+                const text = textArray[typingIndex];
+                const chars = Array.from(text);
+                const nextChar = chars[charIndex];
+
+                // 若遇到 HTML 標籤，整段一次插入
+                if (nextChar === "<") {
+                    const endTagIndex = text.indexOf(">", charIndex);
+                    const tag = text.slice(charIndex, endTagIndex + 1);
+                    typedTextDom.innerHTML += tag;
+                    charIndex = endTagIndex + 1;
+                } else {
+                    typedTextDom.innerHTML += nextChar;
+                    charIndex++;
+                }
+
+                if (charIndex < chars.length) {
+                    setTimeout(typingText, typingSpeed);
+                } else {
+                    setTimeout(deleteText, delay);
+                }
+            };
+
+            const deleteText = () => {
+                const text = textArray[typingIndex];
+                const chars = Array.from(text);
+
+                // 若目前結尾是 HTML 標籤結束符號，整段一次刪除
+                if (chars[charIndex - 1] === ">") {
+                    const startTagIndex = text.lastIndexOf("<", charIndex - 1);
+                    const tag = text.slice(startTagIndex, charIndex);
+                    // 移除最後一個完整標籤
+                    typedTextDom.innerHTML = typedTextDom.innerHTML.replace(tag, "");
+                    charIndex = startTagIndex;
+                } else {
+                    charIndex--;
+                    typedTextDom.innerHTML = chars.slice(0, charIndex).join("");
+                }
+
+                if (charIndex > 0) {
+                    setTimeout(deleteText, typingSpeed / 2);
+                } else {
+                    typingIndex = (typingIndex + 1) % textArray.length;
+                    setTimeout(typingText, typingSpeed);
+                }
+            };
+
+            typingText();
+        </script>
+    </head>
+    <body>
+        <div class="typing-container">
+            <span class="typed-text"></span>
+            <span class="cusor">|</span>
+        </div>
+    </body>
+</html>
