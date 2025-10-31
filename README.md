@@ -19,6 +19,7 @@
 | 2025-10-19(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-19) | HTML+CSS | Animation Effects  | 練習 [Quick CSS Animation Effects](https://www.youtube.com/watch?v=qd2S-2-cn84&t=31s) | 2025-10-30 |
 | 2025-10-18(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-18) | HTML+CSS | Animation Effects  | 練習 [Creative CSS Animation Effects](https://www.youtube.com/watch?v=r_ajdn9dIaw) | 2025-10-30 |
 | 2025-10-31(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-31) | JAVASCRIPT+CSS | Animation Effects  | 練習 [Scroll To Text Reveal Effect](https://www.youtube.com/watch?v=kJA6Cwrb84Q&t=72s) | 2025-10-31 |
+| 2025-10-17(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-17) | JAVASCRIPT+Canvas | Canvas | 練習  [Matrix Text Effect using JavaScript](https://www.youtube.com/watch?v=mgmefWjIAsQ) | 2025-10-31 |
 
 ---
 

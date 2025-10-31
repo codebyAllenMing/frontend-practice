@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>Matrix Text Effect using JavaScript</title>
+        <script type="module">
+            const d = document.getElementById("d");
+            const ctx = d.getContext("2d");
+            d.height = window.innerHeight;
+            d.width = window.innerWidth;
+            let matrix = "QWERTYUIOASDFGHJKLZXCVBNM<!@#$%^&*()1234567890";
+            matrix = matrix.split("");
+            let fontSize = 20;
+            let columns = d.width / fontSize;
+            let drops = [];
+            for (let x = 0; x < columns; x++) drops[x] = 50;
+
+            let lastTime = 0;
+            const baseSpeed = 35; // 每秒移動 35 像素
+
+            function draw(time) {
+                const delta = (time - lastTime) / 1000; // 轉成秒
+                lastTime = time;
+
+                ctx.fillStyle = "rgba(0,0,0,0.08)";
+                ctx.fillRect(0, 0, d.width, d.height);
+                ctx.fillStyle = "#0f0";
+                ctx.font = `${fontSize}px arial`;
+
+                for (let i = 0; i < drops.length; i++) {
+                    // 隨機（random）
+                    const text =
+                        matrix[Math.floor(Math.random() * matrix.length)];
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    // 重生（reset）
+                    if (drops[i] * fontSize > d.height && Math.random() > 0.985)
+                        drops[i] = 0;
+                    // 時間（delta）
+                    drops[i] += baseSpeed * delta * 1.5;
+                }
+
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+        </script>
+    </head>
+    <body>
+        <canvas id="d"></canvas>
+    </body>
+</html>

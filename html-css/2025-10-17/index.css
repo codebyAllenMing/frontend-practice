@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 17px;
+}
+
+body {
+    min-height: 100vh;
+    background: #001219;
+}
+
+#d {
+    width: 100%;
+    height: 100%;
+}
