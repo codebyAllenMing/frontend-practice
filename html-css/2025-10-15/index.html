@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title></title>
+        <script type="module">
+            const container = document.querySelector(".container");
+            const card = document.createElement("div");
+            const nums = 12;
+            for (let i = 0; i < nums; i++) {
+                const clone = card.cloneNode();
+                clone.className = "card";
+                clone.textContent = `${i + 1}`;
+                const zPos = i * -120;
+                const yPos = i * -20;
+                clone.style.transform = `translateZ(${zPos}px) translateY(${yPos}px)`;
+                clone.style.filter = `hue-rotate(${i * 30}deg)`;
+                container.appendChild(clone);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container"></div>
+    </body>
+</html>
