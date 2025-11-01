@@ -24,6 +24,7 @@
 | 2025-11-01(https://codebyallenming.github.io/frontend-practice/html-css/2025-11-01) | JAVASCRIPT+CSS | Background Shape Transform | 練習  [Transform Effects on Scroll](https://www.youtube.com/watch?v=TUpaeN7V2-g&t=64s) | 2025-11-01 |
 | 2025-10-15(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-15) | CSS & JavaScript | Interactive File Card | 練習  [Stunning 3D Card Stack Animation](https://www.youtube.com/watch?v=NZ3hKy97Glo) | 2025-11-01 |
 | 2025-10-14(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-14) | HTML+CSS | Rotation Animation | 練習 [CSS3 3D Rotation Animation Effects](https://www.youtube.com/watch?v=bqL4FqihRQg) | 2025-11-01 |
+| 2025-10-13(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-13) | HTML+CSS | Rotation Animation | 練習  [CSS3 Only 3D Rotation Animation Effects](https://www.youtube.com/watch?v=42YOxo3hczA&t=74s) | 2025-11-01 |
 
 
 | 2025(https://codebyallenming.github.io/frontend-practice/html-css/2025) |  |  | 練習  []() | 2025 |
