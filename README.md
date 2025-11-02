@@ -27,9 +27,10 @@
 | 2025-10-13(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-13) | HTML+CSS | Rotation Animation | 練習  [CSS3 Only 3D Rotation Animation Effects](https://www.youtube.com/watch?v=42YOxo3hczA&t=74s) | 2025-11-01 |
 | 2025-10-12(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-12) | HTML+CSS | Water Drops | 練習 [Water Drops | Drawing with Html & CSS Only](https://www.youtube.com/watch?v=hgqHPLU-qIE) | 2025-11-02 |
 | 2025-10-11(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-11) | HTML+CSS | Animated Abstract Background | 練習 [CSS Animated Abstract Background | Html CSS Only](https://www.youtube.com/watch?v=khaeRtAMVfk) | 2025-11-02 |
+| 2025-10-10(https://codebyallenming.github.io/frontend-practice/html-css/2025-10-10) | HTML+CSS | Make Realistic Cracked Skin Portrait | 練習 [How to Make Realistic Cracked Skin Portrait in Html & CSS](https://www.youtube.com/watch?v=VcWZ8VEQcbw) | 2025-11-02 |
 
 
-| 2025(https://codebyallenming.github.io/frontend-practice/html-css/2025) |  |  | 練習  []() | 2025 |
+| 2025(https://codebyallenming.github.io/frontend-practice/html-css/2025) |  |  | 練習 []() | 2025 |
 
 ---
 
