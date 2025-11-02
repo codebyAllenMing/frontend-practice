@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 17px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #001219;
+    font-family: "Roboto Serif", serif;
+}
+
+.layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 250vh;
+    background: #fff;
+    box-shadow: inset -10px 0 40px rgba(0, 0, 0, 1),
+        inset 10px 0 40px rgba(0, 0, 0, 1),
+        inset -10px 0 10px rgba(255, 255, 255, 0.25),
+        inset 10px 0 10px rgba(255, 255, 255, 0.25), 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.layer.layer1 {
+    background: #222
+        radial-gradient(#00f5d4 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 34px 34px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: animate_bg_1 2s linear infinite;
+    z-index: 1000;
+}
+
+.layer.layer2 {
+    background: #222
+        radial-gradient(#00bbf9 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 34px 34px;
+    transform: translate(-50%, -38%) rotate(45deg);
+    animation: animate_bg_1 4s linear infinite;
+    z-index: 800;
+}
+
+.layer.layer3 {
+    background: #222
+        radial-gradient(#fee440 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 34px 34px;
+    transform: translate(-50%, -62%) rotate(45deg);
+    animation: animate_bg_2 3s linear infinite;
+    z-index: 800;
+}
+
+.layer.layer4 {
+    background: #222
+        radial-gradient(#f15bb5 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 34px 34px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    animation: animate_bg_2 2s linear infinite;
+    z-index: 900;
+}
+
+.layer.layer5 {
+    background: #222
+        radial-gradient(#9b5de5 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 34px 34px;
+    transform: translate(-50%, -38%) rotate(-45deg);
+    animation: animate_bg_2 1s linear infinite;
+}
+
+.layer.layer6 {
+    background: #222
+        radial-gradient(#cce6f4 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 34px 34px;
+    transform: translate(-50%, -62%) rotate(-45deg);
+    animation: animate_bg_1 1.5s linear infinite;
+}
+
+@keyframes animate_bg_1 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 35px -35px;
+    }
+}
+
+@keyframes animate_bg_2 {
+    0% {
+        background-position: 35px -35px;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
