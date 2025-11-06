@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="./odometer-theme-digital.css" />
+        <script type="module" src="./odometer.min.js"></script>
+        <script type="module">
+            let num = 3345678;
+            setTimeout(() => {
+                const odometer = document.querySelector("#odometer");
+                odometer.innerHTML = num;
+            });
+            const btn = document.getElementById("btn");
+            btn.addEventListener("click", () => {
+                const value = num++;
+                odometer.innerHTML = value;
+            });
+        </script>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <div id="odometer" class="odometer">000000</div>
+            <h2>Subscribers</h2>
+            <button id="btn">Click</button>
+        </div>
+    </body>
+</html>
